@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Barangay Sta. Maria</title>
+    <link rel="stylesheet" href="design.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif; /* Consistent font across the site */
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2; /* Light neutral background */
+            color: #2b6777; /* Deep greenish-blue for main text */
+        }
+        header {
+            background: url('headerservices.png') no-repeat center; 
+            background-size: cover; 
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #52ab98; /* Minty green on hover */
+        }
+        .services {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #ffffff; /* White background for service section */
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .services h2 {
+            color: #2b6777; /* Deep greenish-blue for headings */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .card {
+            background: #c8d8e4; /* Soft blue-gray for cards */
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 20px;
+            flex: 1 1 calc(30% - 20px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background: #2b6777; /* Deep greenish-blue for footer */
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+            .services {
+                padding: 20px;
+            }
+            .card {
+                flex: 1 1 calc(45% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 15px 0;
+            }
+            .services h2 {
+                font-size: 1.5em;
+            }
+            .card {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Barangay Sta. Maria</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="services">
+        <section class="services">
+            <h2>Our Services</h2>
+            <p>Barangay Sta. Maria offers a variety of services designed to support our community:</p>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Health Services</h3>
+                    <p>Regular health check-ups, immunization programs, and health education workshops.</p>
+                </div>
+                <div class="card">
+                    <h3>Community Counseling</h3>
+                    <p>Free counseling services for individuals, families, and groups to promote mental wellness.</p>
+                </div>
+                <div class="card">
+                    <h3>Disaster Preparedness</h3>
+                    <p>Workshops and training for effective disaster response and community resilience.</p>
+                </div>
+                <div class="card">
+                    <h3>Senior Citizen Support</h3>
+                    <p>Programs to assist senior citizens with health checks and social activities.</p>
+                </div>
+                <div class="card">
+                    <h3>Youth Programs</h3>
+                    <p>Various activities promoting sports, arts, and skills development for the youth.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Barangay Sta. Maria. All rights reserved.</p>
+    </footer>
+
+    <script src="functions.js"></script>
+</body>
+</html>

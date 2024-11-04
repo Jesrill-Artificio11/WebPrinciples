@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Barangay Sta. Maria</title>
+    <link rel="stylesheet" href="design.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f2f2f2; /* Light neutral background */
+            color: #2b6777; /* Deep greenish-blue for main text */
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* HEADER */
+        header {
+            background: url('headerabout.png') no-repeat center; 
+            background-size: cover; 
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background-color: rgba(43, 103, 119, 0.8); /* Fallback color with slight opacity */
+        }
+
+        header h1 {
+            font-size: 2em;
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ffffff; /* White text for links */
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #52ab98; /* Minty green on hover for better contrast */
+        }
+
+        /* ABOUT SECTION */
+        main {
+            flex: 1;
+            padding: 40px 20px;
+            background-color: #f4f4f4; /* Light beige background */
+        }
+
+        .about-section {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #ffffff; /* White for contrast */
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-section h2 {
+            color: #2b6777; /* Deep greenish-blue for headings */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .about-section h3 {
+            color: #2b6777; /* Deep greenish-blue for subheadings */
+            margin-top: 20px;
+        }
+
+        .contact-info img {
+            width: 100%; /* Make the image take the full width of its container */
+            height: auto; /* Maintain the aspect ratio of the image */
+            max-width: 600px; /* Optional: Set a max-width if you want to limit its size */
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background: #2b6777; /* Deep greenish-blue */
+            color: #ffffff; /* White text for footer */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .about-section {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 15px 0;
+            }
+
+            .about-section h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Barangay Sta. Maria</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="about">
+        <section class="about-section" style="text-align: center;">
+            <h2>About Us</h2>
+            <p>Barangay Sta. Maria is a vibrant community dedicated to serving its residents with pride and commitment. We aim to foster a strong sense of community while providing essential services that enhance the quality of life for all residents.</p>
+            <br>
+            <h3>Our Mission</h3>
+            <p>To promote the welfare of our residents through effective governance, community participation, and the delivery of essential services.</p>
+            <br>
+            <h3>Our Vision</h3>
+            <p>A united and thriving community that empowers its members and promotes sustainable development.</p>
+            <br>
+            <h3>Contact Information</h3>
+            <div class="contact-info">
+                <p><strong>Address:</strong> Barangay Sta. Maria, City of San Pablo, Laguna, 3000</p>
+                <p><strong>Email:</strong> barangay.stamaria@gmail.com</p>
+                <p><strong>Phone:</strong> +63 123 456 7890</p>
+                <p><strong>Website:</strong> www.barangaystamaria.gov.ph</p>
+                <img src="map.png" alt="Map of Barangay Sta. Maria" class="img-fluid">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Barangay Sta. Maria. All rights reserved.</p>
+    </footer>
+
+    <script src="functions.js"></script>
+</body>
+</html>

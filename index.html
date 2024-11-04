@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barangay Website</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <header>
+        <h1>Barangay Sta. Maria</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn">&times;</span>
+                <h3>Join our Community</h3>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    
+        <section class="welcome-section">
+            <h2>Welcome to Barangay Sta. Maria!</h2>
+            <p>We are dedicated to serving our residents with pride and commitment. Our barangay is a vibrant community with a rich cultural heritage, friendly neighbors, and numerous services to support you.</p>
+            <button id="subscribeBtn">Join our Community</button>
+        </section>
+    
+        <section class="community-highlights">
+            <h2>Community Highlights</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Annual Barangay Fiesta</h3>
+                    <p>Join us every January for a month-long celebration filled with food, games, and cultural performances!</p>
+                </div>
+                <div class="card">
+                    <h3>Clean and Green Program</h3>
+                    <p>Help us keep our barangay clean and green. Participate in our monthly cleanup drives.</p>
+                </div>
+                <div class="card">
+                    <h3>Sports Fest</h3>
+                    <p>Every summer, we hold a sports fest to promote health and wellness among residents of all ages.</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="services">
+            <h2>Our Services</h2>
+            <p>Barangay Sta. Maria offers a range of services to assist our community:</p>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Health Services</h3>
+                    <p>Regular health check-ups and immunization programs.</p>
+                </div>
+                <div class="card">
+                    <h3>Community Counseling</h3>
+                    <p>Free counseling services for individuals and families.</p>
+                </div>
+                <div class="card">
+                    <h3>Disaster Preparedness</h3>
+                    <p>Workshops and training for disaster preparedness and response.</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <p>Stay updated with our upcoming events:</p>
+            <ul>
+                <li><strong>Neighborhood Meeting:</strong> Every last Friday of the month at 6 PM in the barangay hall.</li>
+                <li><strong>Health Fair:</strong> Join us on March 15 for free health services and screenings.</li>
+                <li><strong>Earth Day Celebration:</strong> April 22 - Activities include tree planting and recycling workshops.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Barangay Sta. Maria. All rights reserved.</p>
+    </footer>
+
+    <script src="functions.js"></script>
+</body>
+</html>
